@@ -1,0 +1,29 @@
+1. Dla tabeli zamowienia(id_produktu, nazwa_produktu, id_klienta, nazwa_klienta, 
+data_zamowienia, cena_produktu, ilość, VAT, suma_brutto, suma_netto) określ wszystkie 
+zależności funkcyjne.
+
+//wzór: Id_produktu -> nazwa_produktu, cena_produktu, VAT
+
+//zależności:
+	id_klienta -> nazwa_klienta
+	cena_produktu, ilość -> suma_netto
+	suma_netto, VAT -> suma brutto
+	id_klienta, data_zamowienia -> id_produktu, ilość
+
+2. Wypisz wszystkie klucze kandydujące.
+
+//klucze kandydujące:
+	id_produktu, id_klienta, data_zamowienia
+
+3. Dla tabeli pomieszczenia(id_pomieszczenia, numer_pomieszczenia, id_budynku, 
+powierzchnia, liczba_okien, liczba_drzwi, ulica, miasto, kod_pocztowy) określ wszystkie 
+zależności funkcyjne oraz klucze kandydujące.
+
+//zależności:
+	id_pomieszczenia -> numer_pomieszczenia, powierzchnia, liczba_okien, liczba_drzwi
+	numer_pomieszczenia -> powierzchnia, liczba_okien, liczba_drzwi
+	id_budynku -> ulica, miasto
+	miasto -> kod_pocztowy
+
+//klucze kandydujące:
+	id_pomieszczenia, id_budynku
